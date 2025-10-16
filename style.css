@@ -1,0 +1,114 @@
+/* Değişkenler */
+:root {
+    --primary-color: #333;
+    --secondary-color: #666;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    color: var(--secondary-color);
+}
+
+/* HEADER ve NAV */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    height: 6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 0.5em;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Sayfa Başlıkları*/
+h2 {
+    color: var(--primary-color);
+    margin: 1em 1em;
+}
+
+h3 a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* MAIN ve BLOG SAYFASI */
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.blog-page {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ARTICLE STİLLERİ*/
+article {
+    text-align: center;
+    background-color: white;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 1em;
+    width: 40%;
+}
+
+.article {
+    width: 90%;
+    margin-top: 1em;
+}
+
+article * {
+    margin: 0.5em;
+}
+
+article p {
+    margin-top: 2em;
+}
+
+/* FOOTER */
+footer {
+    height: 3em;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+}
